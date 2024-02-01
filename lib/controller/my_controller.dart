@@ -11,7 +11,7 @@ class MyController with ChangeNotifier {
   Future fetchData() async {
     notifyListeners();
     final newsUrl = Uri.parse(
-      "https://newsapi.org/v2/everything?q=apple&from=2023-12-24&to=2023-12-24&sortBy=popularity&apiKey=e8c8ab89a94343fdb306149805f02275",
+      "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=e8c8ab89a94343fdb306149805f02275",
     );
     final response = await http.get(newsUrl);
     if (response.statusCode == 200) {

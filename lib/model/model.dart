@@ -23,11 +23,11 @@ class Article {
   Source? source;
   String? author;
   String? title;
-  String? description;
+  dynamic description;
   String? url;
-  String? urlToImage;
+  dynamic urlToImage;
   DateTime? publishedAt;
-  String? content;
+  dynamic content;
 
   Article({
     this.source,
